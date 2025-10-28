@@ -34,8 +34,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
 
 <!-- Hero Section -->
 <section class="bg-gradient-to-br from-purple-600 to-purple-800 text-white pt-48 pb-32 text-center">
@@ -125,10 +124,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<!-- Unit Management Product Section -->
+	<!-- Unit Management Product Section -->
 <section id="unit-management" class="py-24 bg-gradient-to-b from-gray-100 to-teal-50">
 	<div class="max-w-7xl mx-auto px-6">
 		<div class="text-center">
