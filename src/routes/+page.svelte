@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import companyLogo from '$lib/assets/Scout-Spark-Software.png';
+	import hikingLogo from '$lib/assets/Scout-Spark-Hiking.png';
 
 	let scrolled = $state(false);
 
@@ -22,7 +24,9 @@
 	<nav class="nav" class:scrolled>
 		<div class="container">
 			<div class="nav-content">
-				<div class="logo">ScoutSpark</div>
+				<div class="logo">
+					<img src={companyLogo} alt="ScoutSpark" />
+				</div>
 				<div class="nav-links">
 					<a href="#hiking">Hiking</a>
 					<a href="#camping">Camping</a>
@@ -52,7 +56,9 @@
 	<section id="hiking" class="product-section hiking">
 		<div class="container">
 			<div class="product-content">
-				<div class="product-icon">🥾</div>
+				<div class="product-icon">
+					<img src={hikingLogo} alt="Hiking" class="product-logo" />
+				</div>
 				<h2 class="section-title">Hiking</h2>
 				<p class="section-description">
 					Plan and track your hiking adventures with precision. Our hiking solution provides
@@ -226,9 +232,18 @@
 	}
 
 	.logo {
-		font-size: 1.5rem;
-		font-weight: bold;
-		color: #2c5282;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo img {
+		height: 50px;
+		width: auto;
+		transition: height 0.3s ease;
+	}
+
+	.nav.scrolled .logo img {
+		height: 40px;
 	}
 
 	.nav-links {
@@ -336,6 +351,15 @@
 	.product-icon {
 		font-size: 5rem;
 		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.product-logo {
+		max-width: 300px;
+		width: 100%;
+		height: auto;
 	}
 
 	.section-title {
@@ -476,6 +500,18 @@
 		.features {
 			grid-template-columns: 1fr;
 		}
+
+		.logo img {
+			height: 40px;
+		}
+
+		.nav.scrolled .logo img {
+			height: 35px;
+		}
+
+		.product-logo {
+			max-width: 250px;
+		}
 	}
 
 	@media (max-width: 480px) {
@@ -497,6 +533,18 @@
 
 		.nav-links {
 			display: none;
+		}
+
+		.logo img {
+			height: 35px;
+		}
+
+		.nav.scrolled .logo img {
+			height: 30px;
+		}
+
+		.product-logo {
+			max-width: 200px;
 		}
 	}
 </style>
