@@ -34,19 +34,60 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+	</div>
+</nav>
 
-	<!-- Hero Section -->
-	<section class="hero">
-		<div class="container">
-			<div class="hero-content">
-				<h1 class="hero-title">Empowering Scouting Adventures</h1>
-				<p class="hero-subtitle">
-					Complete solutions for hiking, camping, and unit management to make every scouting experience unforgettable
-				</p>
-				<div class="hero-buttons">
-					<a href="#hiking" class="btn btn-primary">Explore Products</a>
-					<a href="#contact" class="btn btn-secondary">Get Started</a>
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-purple-600 to-purple-800 text-white pt-48 pb-32 text-center">
+	<div class="max-w-4xl mx-auto px-6">
+		<h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+			Empowering Scouting Adventures
+		</h1>
+		<p class="text-xl md:text-2xl mb-10 opacity-95 leading-relaxed">
+			Complete solutions for hiking, camping, and unit management to make every scouting experience unforgettable
+		</p>
+		<div class="flex gap-4 justify-center flex-wrap">
+			<a href="#hiking" class="bg-white text-purple-600 px-10 py-4 rounded-full font-semibold hover:shadow-xl hover:-translate-y-1 transition-all">
+				Explore Products
+			</a>
+			<a href="#contact" class="bg-transparent text-white px-10 py-4 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-purple-600 transition-all">
+				Get Started
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Hiking Product Section -->
+<section id="hiking" class="py-24 bg-gradient-to-b from-gray-50 to-gray-100">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="text-center">
+			<div class="text-7xl mb-6">🥾</div>
+			<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Hiking</h2>
+			<p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+				Discover and share amazing hiking trails with your scout troop. Browse local hiking destinations,
+				submit new hikes you've explored, and save your favorite trails for future adventures.
+			</p>
+			<div class="grid md:grid-cols-3 gap-8 mt-12">
+				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+					<div class="text-5xl mb-4">🔍</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Browse Local Hikes</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Search and discover hiking trails in your area perfect for scout activities
+					</p>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+					<div class="text-5xl mb-4">📝</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Submit Hikes</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Share your favorite trails and hiking experiences with other scout troops
+					</p>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+					<div class="text-5xl mb-4">⭐</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-3">Favorite Trails</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Save your favorite hikes for easy access and trip planning
+					</p>
 				</div>
 			</div>
 		</div>
@@ -84,99 +125,52 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<!-- Camping Product Section -->
-	<section id="camping" class="product-section camping">
-		<div class="container">
-			<div class="product-content">
-				<div class="product-icon">⛺</div>
-				<h2 class="section-title">Camping</h2>
-				<p class="section-description">
-					Everything you need to organize successful camping trips. From site selection to
-					equipment checklists, our camping tool streamlines planning and ensures nothing is
-					left behind.
-				</p>
-				<div class="features">
-					<div class="feature">
-						<div class="feature-icon">🏕️</div>
-						<h3>Site Planning</h3>
-						<p>Find and reserve the perfect camping locations</p>
-					</div>
-					<div class="feature">
-						<div class="feature-icon">✅</div>
-						<h3>Gear Checklists</h3>
-						<p>Comprehensive packing lists and inventory management</p>
-					</div>
-					<div class="feature">
-						<div class="feature-icon">🌤️</div>
-						<h3>Weather Integration</h3>
-						<p>Real-time weather updates and forecasts</p>
-					</div>
+<!-- Unit Management Product Section -->
+<section id="unit-management" class="py-24 bg-gradient-to-b from-gray-100 to-teal-50">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="text-center">
+			<div class="text-7xl mb-6">👥</div>
+			<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Unit Management</h2>
+			<div class="max-w-2xl mx-auto">
+				<div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 inline-block">
+					<p class="text-2xl font-semibold text-blue-900 mb-2">Coming Soon</p>
+					<p class="text-lg text-blue-700">
+						Comprehensive tools for managing your scout unit are on the way. Get ready for simplified administration!
+					</p>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<!-- Unit Management Product Section -->
-	<section id="unit-management" class="product-section unit-management">
-		<div class="container">
-			<div class="product-content">
-				<div class="product-icon">👥</div>
-				<h2 class="section-title">Unit Management</h2>
-				<p class="section-description">
-					Simplify administration and communication for your scouting unit. Manage rosters,
-					track attendance, coordinate events, and keep families informed with our comprehensive
-					unit management platform.
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-16">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="grid md:grid-cols-3 gap-12 mb-12">
+			<div>
+				<h3 class="text-2xl font-bold mb-4">ScoutSpark</h3>
+				<p class="text-gray-300 leading-relaxed">
+					Empowering scouting organizations with modern tools for adventure and management.
 				</p>
-				<div class="features">
-					<div class="feature">
-						<div class="feature-icon">📋</div>
-						<h3>Member Management</h3>
-						<p>Maintain rosters, records, and advancement tracking</p>
-					</div>
-					<div class="feature">
-						<div class="feature-icon">📅</div>
-						<h3>Event Coordination</h3>
-						<p>Schedule meetings, track RSVPs, and manage calendars</p>
-					</div>
-					<div class="feature">
-						<div class="feature-icon">💬</div>
-						<h3>Communication Hub</h3>
-						<p>Announcements, messaging, and family notifications</p>
-					</div>
-				</div>
 			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-content">
-				<div class="footer-section">
-					<h3>ScoutSpark</h3>
-					<p>Empowering scouting organizations with modern tools for adventure and management.</p>
-				</div>
-				<div class="footer-section">
-					<h4>Products</h4>
-					<ul>
-						<li><a href="#hiking">Hiking</a></li>
-						<li><a href="#camping">Camping</a></li>
-						<li><a href="#unit-management">Unit Management</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h4>Company</h4>
-					<ul>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="#support">Support</a></li>
-					</ul>
-				</div>
+			<div>
+				<h4 class="text-lg font-semibold mb-4 text-gray-200">Products</h4>
+				<ul class="space-y-2">
+					<li><a href="#hiking" class="text-gray-300 hover:text-white transition-colors">Hiking</a></li>
+					<li><a href="#camping" class="text-gray-300 hover:text-white transition-colors">Camping</a></li>
+					<li><a href="#unit-management" class="text-gray-300 hover:text-white transition-colors">Unit Management</a></li>
+				</ul>
 			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2024 ScoutSpark. All rights reserved.</p>
+			<div>
+				<h4 class="text-lg font-semibold mb-4 text-gray-200">Company</h4>
+				<ul class="space-y-2">
+					<li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+					<li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+					<li><a href="#support" class="text-gray-300 hover:text-white transition-colors">Support</a></li>
+				</ul>
 			</div>
 		</div>
 	</footer>
