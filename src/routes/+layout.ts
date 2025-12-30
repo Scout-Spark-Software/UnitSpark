@@ -2,5 +2,7 @@ import { dev } from "$app/environment";
 import { injectAnalytics } from "@vercel/analytics/sveltekit";
 import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
 
-injectAnalytics({ mode: dev ? "development" : "production" });
-injectSpeedInsights({ mode: dev ? "development" : "production" });
+export const load = () => {
+  injectAnalytics({ mode: dev ? "development" : "production" });
+  injectSpeedInsights();
+};
