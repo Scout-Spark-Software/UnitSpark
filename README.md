@@ -1,38 +1,97 @@
-# sv
+# Unit Spark
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The adventures platform by Unit Spark, showcasing comprehensive solutions for scouting adventures including hiking and camping.
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
+Unit Spark is the parent company behind the adventures-focused website, adventures.unitspark.org. While ScoutSpark focuses on outdoor adventure resources and inspiration for scouting activities, Unit Spark also develops a separate unit management platform (currently under development). The site features interactive sections highlighting hiking and camping adventures.
+
+## Tech Stack
+
+- **Framework**: [SvelteKit](https://kit.svelte.dev/) v2
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Build Tool**: Vite
+- **Runtime**: Node.js
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (latest LTS version recommended)
+- npm, pnpm, or yarn
+
+### Installation
 
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
 ```
 
-## Developing
+### Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the development server:
 
 ```sh
 npm run dev
+```
 
-# or start the server and open the app in a new browser tab
+Open your browser and navigate to the local development URL (typically `http://localhost:5173`).
+
+To automatically open the app in a browser:
+
+```sh
 npm run dev -- --open
 ```
 
-## Building
+## Available Scripts
 
-To create a production version of your app:
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run preview` - Preview production build locally
+- `npm run check` - Run Svelte type checking
+- `npm run check:watch` - Run type checking in watch mode
+
+## Project Structure
+
+```
+src/
+├── lib/
+│   └── components/
+│       ├── Navigation.svelte
+│       ├── Hero.svelte
+│       ├── AdventuresSection.svelte
+│       ├── UnitManagementSection.svelte
+│       ├── HikingSection.svelte
+│       ├── CampingSection.svelte
+│       └── Footer.svelte
+├── routes/
+│   ├── +page.svelte
+│   └── +layout.svelte
+└── app.d.ts
+```
+
+## Building for Production
+
+Create an optimized production build:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+npm run preview
+```
+
+## Deployment
+
+This project uses `@sveltejs/adapter-auto` which automatically selects the appropriate adapter for your deployment target. You may need to install a specific [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Contributing
+
+This project is part of the Scout Spark Software initiative. For questions or contributions, please refer to the project maintainers.
+
+## License
+
+Private - All rights reserved
