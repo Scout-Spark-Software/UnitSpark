@@ -32,25 +32,25 @@
                 <ul class="space-y-2">
                     <li>
                         <a
-                            href="#about"
+                            href="/about"
                             class="text-gray-400 hover:text-white transition-colors"
                             >About Us</a
                         >
                     </li>
-                    <li>
+                    <!-- <li>
                         <a
-                            href="#contact"
+                            href="/contact"
                             class="text-gray-400 hover:text-white transition-colors"
                             >Contact</a
                         >
                     </li>
                     <li>
                         <a
-                            href="#support"
+                            href="/support"
                             class="text-gray-400 hover:text-white transition-colors"
                             >Support</a
                         >
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
