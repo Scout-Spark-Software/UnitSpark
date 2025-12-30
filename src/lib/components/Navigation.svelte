@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import companyLogo from "$lib/assets/Scout-Spark-Software.png";
+    import companyLogo from "$lib/assets/Unit-Spark-Software.png";
 
     let scrolled = $state(false);
 
@@ -12,6 +12,17 @@
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     });
+
+    function smoothScroll(e: MouseEvent, targetId: string) {
+        e.preventDefault();
+        const element = document.querySelector(targetId);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }
 </script>
 
 <nav
@@ -24,7 +35,7 @@
             <div class="transition-all duration-300">
                 <img
                     src={companyLogo}
-                    alt="ScoutSpark"
+                    alt="Adventures by Unit Spark"
                     class="{scrolled
                         ? 'h-10'
                         : 'h-14'} w-auto transition-all duration-300"
@@ -32,24 +43,19 @@
             </div>
             <div class="hidden md:flex gap-8">
                 <a
-                    href="#hiking"
+                    href="#adventures"
+                    onclick={(e) => smoothScroll(e, "#adventures")}
                     class="{scrolled
                         ? 'text-gray-700 hover:text-purple-600'
-                        : 'text-white hover:text-purple-200'} font-medium transition-colors"
-                    >Hiking</a
-                >
-                <a
-                    href="#camping"
-                    class="{scrolled
-                        ? 'text-gray-700 hover:text-purple-600'
-                        : 'text-white hover:text-purple-200'} font-medium transition-colors"
-                    >Camping</a
+                        : 'text-white hover:text-purple-200'} font-medium transition-colors cursor-pointer"
+                    >Adventures</a
                 >
                 <a
                     href="#unit-management"
+                    onclick={(e) => smoothScroll(e, "#unit-management")}
                     class="{scrolled
                         ? 'text-gray-700 hover:text-purple-600'
-                        : 'text-white hover:text-purple-200'} font-medium transition-colors"
+                        : 'text-white hover:text-purple-200'} font-medium transition-colors cursor-pointer"
                     >Unit Management</a
                 >
             </div>
