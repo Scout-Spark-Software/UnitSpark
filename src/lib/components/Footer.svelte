@@ -55,7 +55,9 @@
             </div>
         </div>
         <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 ScoutSpark. All rights reserved.</p>
+            <p>
+                &copy; {new Date().getFullYear()} Unit Spark. All rights reserved.
+            </p>
         </div>
     </div>
 </footer>

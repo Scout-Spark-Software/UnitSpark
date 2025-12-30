@@ -4,7 +4,7 @@ The adventures platform by Unit Spark, showcasing comprehensive solutions for sc
 
 ## About
 
-Unit Spark is the parent company behind the adventures-focused website, adventures.unitspark.org. While ScoutSpark focuses on outdoor adventure resources and inspiration for scouting activities, Unit Spark also develops a separate unit management platform (currently under development). The site features interactive sections highlighting hiking and camping adventures.
+Unit Spark is the parent company behind the adventures-focused website, adventures.unitspark.org. While Unit Spark focuses on outdoor adventure resources and inspiration for scouting activities, Unit Spark also develops a separate unit management platform (currently under development). The site features interactive sections highlighting hiking and camping adventures.
 
 ## Tech Stack
 
